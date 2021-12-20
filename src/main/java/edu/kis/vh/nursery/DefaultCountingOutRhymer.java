@@ -8,7 +8,7 @@ public class DefaultCountingOutRhymer {
 
     protected void countIn(int in) {
         if (!isFull())
-            numbers[++total] = in;
+            getNumbers()[++total] = in;
     }
 
 
@@ -23,16 +23,21 @@ public class DefaultCountingOutRhymer {
     protected int peekaboo() {
         if (callCheck())
             return -1;
-        return numbers[total];
+        return getNumbers()[total];
     }
 
     protected int countOut() {
         if (callCheck())
             return -1;
-        return numbers[total--];
+        return getNumbers()[total--];
     }
 
     private int getTotal() {
         return total;
     }
+
+    public int[] getNumbers() {
+        return numbers;
+    }
+
 }
