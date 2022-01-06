@@ -1,5 +1,6 @@
 package edu.kis.vh.nursery.list;
 
+// TODO: klasa jest nieużywana i nietestowana, trzeba dopisać testy jednostkowe
 public class IntLinkedList {
 
     private Node last;
