@@ -15,7 +15,7 @@ public class Node {
      * @param i wartość do ustawienia
      */
     protected Node(int i) {
-        setValue(i);
+        this.value = i;
     }
 
     /**
@@ -24,14 +24,6 @@ public class Node {
      */
     public int getValue() {
         return value;
-    }
-
-    /**
-     * Metoda ustawiajaca wartość pola value
-     * @param value wartość do ustawienia
-     */
-    public void setValue(int value) {
-        this.value = value;
     }
 
     /**
