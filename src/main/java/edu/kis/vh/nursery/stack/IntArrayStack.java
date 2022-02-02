@@ -1,31 +1,31 @@
-package edu.kis.vh.nursery;
+package edu.kis.vh.nursery.stack;
 
 public class IntArrayStack implements IntArrayStackInterface {
     private final int[] numbers = new int[REAL_SIZE];
 
     private int total = EMPTY;
 
-    protected void countIn(int in) {
+    public void countIn(int in) {
         if (!isFull())
             numbers[++total] = in;
     }
 
 
-    protected boolean callCheck() {
+    public boolean callCheck() {
         return total == EMPTY;
     }
 
-    protected boolean isFull() {
+    public boolean isFull() {
         return total == SIZE;
     }
 
-    protected int peekaboo() {
+    public int peekaboo() {
         if (callCheck())
             return EMPTY;
         return numbers[total];
     }
 
-    protected int countOut() {
+    public int countOut() {
         if (callCheck())
             return EMPTY;
         return numbers[total--];

@@ -1,4 +1,4 @@
-package edu.kis.vh.nursery.list;
+package edu.kis.vh.nursery.stack;
 
 // TODO: klasa jest nieużywana i nietestowana, trzeba dopisać testy jednostkowe
 public class IntLinkedList implements IntLinkedListInterface {
