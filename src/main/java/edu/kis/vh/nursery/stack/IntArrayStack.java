@@ -3,7 +3,11 @@ package edu.kis.vh.nursery.stack;
 public class IntArrayStack implements IntArrayStackInterface {
     private final int[] numbers = new int[REAL_SIZE];
 
-    private int total = EMPTY;
+    private int total;
+
+    public IntArrayStack() {
+        this.total = EMPTY;
+    }
 
     public void countIn(int in) {
         if (!isFull())

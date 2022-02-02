@@ -5,6 +5,10 @@ public class IntLinkedList implements IntLinkedListInterface {
 
     private Node last;
 
+    public IntLinkedList(Node last) {
+        this.last = last;
+    }
+
     private void push(int i) {
         if (getLast() == null)
             setLast(new Node(i));
