@@ -1,9 +1,6 @@
 package edu.kis.vh.nursery;
 
-public class IntArrayStack {
-    public static final int SIZE = 11;
-    public static final int EMPTY = -1;
-    public static final int REAL_SIZE = SIZE + 1;
+public class IntArrayStack implements IntArrayStackInterface {
     private final int[] numbers = new int[REAL_SIZE];
 
     private int total = EMPTY;
