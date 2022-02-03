@@ -3,7 +3,7 @@ package edu.kis.vh.nursery;
 import edu.kis.vh.nursery.stack.IntArrayStack;
 
 public class DefaultCountingOutRhymer {
-    IntArrayStack intArrayStack;
+    private IntArrayStack intArrayStack;
 
     public DefaultCountingOutRhymer() {
         this.intArrayStack = new IntArrayStack();
@@ -25,7 +25,7 @@ public class DefaultCountingOutRhymer {
         return intArrayStack.isFull();
     }
 
-    public int peekaboo() {
+    protected int peekaboo() {
         return intArrayStack.peekaboo();
     }
 
