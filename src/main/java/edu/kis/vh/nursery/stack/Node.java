@@ -1,4 +1,4 @@
-package edu.kis.vh.nursery.list;
+package edu.kis.vh.nursery.stack;
 
 // TODO: klasa jest nieużywana i nietestowana, trzeba dopisać testy jednostkowe
 /**
@@ -36,7 +36,6 @@ public class Node {
 
     /**
      * Metoda ustawiająca następny element listy
-     * @return nastepny obiekt listy
      */
     public void setPrev(Node prev) {
         this.prev = prev;
@@ -52,7 +51,6 @@ public class Node {
 
     /**
      * Metoda ustawiająca następny element listy
-     * @return nastepny obiekt listy
      */
     public void setNext(Node next) {
         this.next = next;

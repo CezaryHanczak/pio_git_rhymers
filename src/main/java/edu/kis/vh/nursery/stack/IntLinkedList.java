@@ -1,9 +1,13 @@
-package edu.kis.vh.nursery.list;
+package edu.kis.vh.nursery.stack;
 
 // TODO: klasa jest nieużywana i nietestowana, trzeba dopisać testy jednostkowe
-public class IntLinkedList {
+public class IntLinkedList implements IntLinkedListInterface {
 
     private Node last;
+
+    public IntLinkedList(Node last) {
+        this.last = last;
+    }
 
     private void push(int i) {
         if (getLast() == null)
@@ -37,10 +41,12 @@ public class IntLinkedList {
         return ret;
     }
 
+    @Override
     public Node getLast() {
         return last;
     }
 
+    @Override
     public void setLast(Node last) {
         this.last = last;
     }
