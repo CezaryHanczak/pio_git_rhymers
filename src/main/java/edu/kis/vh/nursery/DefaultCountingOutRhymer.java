@@ -21,6 +21,7 @@ public class DefaultCountingOutRhymer {
         return intArrayStack.callCheck();
     }
 
+
     public boolean isFull() {
         return intArrayStack.isFull();
     }
